@@ -3,33 +3,135 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <base href="">
     <meta charset="utf-8" />
-    <title>Service Status - United Kingdom Roller Derby Association</title>
+    <title>UKRDA Status - United Kingdom Roller Derby Association</title>
     <link rel="canonical" href="http://status.ukrda.org.uk/"/>
     <meta property="og:site_name" content="Service Status - UKRDA"/>
     <meta property="og:title" content="Status"/>
     <meta property="og:url" content="http://status.ukrda.org.uk/"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:image" content=""/>
+    <meta property="og:image" content="http://status.ukrda.org.uk/logo.jpg"/>
     <meta itemprop="name" content="Status"/>
     <meta itemprop="url" content="http://status.ukrda.org.uk/"/>
-    <meta itemprop="thumbnailUrl" content=""/>
-    <link rel="image_src" href="" />
-    <meta itemprop="image" content=""/>
+    <meta itemprop="thumbnailUrl" content="http://status.ukrda.org.uk/logo.jpg"/>
+    <link rel="image_src" href="http://status.ukrda.org.uk/logo.jpg" />
+    <meta itemprop="image" content="http://status.ukrda.org.uk/logo.jpg"/>
     <meta name="twitter:title" content="Status"/>
-    <meta name="twitter:image" content=""/>
+    <meta name="twitter:image" content="http://status.ukrda.org.uk/logo.jpg"/>
     <meta name="twitter:url" content="http://status.ukrda.org.uk/"/>
     <meta name="twitter:card" content="summary"/>
-    <meta name="description" content="" />
+    <meta name="description" content="Status of services run by the United Kingdom Roller Derby Association">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet" type="text/css">
+    <style>
+      body {
+        background:
+          linear-gradient(
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8)
+          ),
+          url(logo.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 125%;
+        margin: 0;
+      }
+      .wrapper { padding: 3em; }
+        .content {
+          padding: 0.8em 2.5em;
+          max-width: 80%;
+          margin: 0 auto;
+          background: #fff;
+          border-radius: 10px;
+          box-shadow: 0 0 1.5em rgba(0,0,0,0.5);
+        }
+          .down h1 span,
+          li.down span { background-color: #d00; }
+          .warn h1 span,
+          li.warn span { background-color: #e88517; }
+          .up h1 span,
+          li.up span { background-color: #44aa62; }
+
+          .logo {
+            float: right;
+            height: 10em;
+          }
+            .logo img { height: 100%; }
+
+          h1 {
+            font-family: 'Droid Sans Mono', monospace;
+            margin: 1em 0 0.4em;
+          }
+          .up .summary:after { content: 'everything is operating normally.'; }
+          li.up span:after { content: 'operating normally'; }
+          .warn .summary:after { content: 'one or more services are having some difficulties.'; }
+          li.warn span:after { content: 'having some difficulties'; }
+          .down .summary:after { content: 'there is a significant outage affecting one or more services.'; }
+          li.down span:after { content: 'suffering a significant outage'; }
+
+          .summary { margin: 0; }
+
+          h3 { margin: 0; }
+          p {margin: 0.5em 0;}
+          a, a:visited { color: #06c; }
+          a:active,
+          a:hover {
+            color: #038;
+            text-decoration: none;
+          }
+          li { margin: 1em; }
+          span {
+            color: #fff;
+            padding: 0.1em;
+          }
+          footer {
+            color: #888;
+            font-size: 0.8em;
+            text-align: right;
+          }
+            footer a,
+            footer a:visited { color: #888; }
+    </style>
   </head>
-  <body>
+  <body class="up">
     <div class="wrapper">
-      <header>
-      </header>
-      <footer>
-      </footer>
+      <div class="content">
+        <div class="logo"><img src="logo.jpg" alt="United Kingdom Roller Derby Association" /></div>
+        <header>
+          <h1>UKRDA<span>Status</span></h1>
+          <p class="summary"></p>
+        </header>
+        <ul>
+          <li class="up"><a href="http://ukrda.org.uk/" target="_blank">ukrda.org.uk</a> is <span></span></li>
+          <li class="up"><a href="http://forum.ukrda.org.uk/" target="_blank">forum.ukrda.org.uk</a> is <span></span></li>
+          <li class="up"><a href="http://ukroc.org.uk/" target="_blank">ukroc.org.uk</a> is <span></span></li>
+          <li class="up">the <a href="https://github.com/ukrda/muster" target="_blank">muster</a> beta test is <span></span></li>
+        </ul>
+        <br />
+        <h3>What is this site?</h3>
+        <p>
+          The <a href="http://ukrda.org.uk/" title="United Kingdom Roller Derby Association" rel="home">UKRDA</a> occasionally undergoes maintenance operations in order to provide a stable and secure service for our users.<br />
+          When such operations occur (or in the event of any unforseen circumstances) and our service is affected, this site will be updated to reflect what's going on.<br />
+          If you are experiencing any difficulties connecting to any of the above services and you do not see any information posted, please get in touch with <a href="mailto:tech@ukrda.org.uk">tech@ukrda.org.uk</a> and we will investigate.
+        </p>
+        <footer>
+          <a href="http://ukrda.org.uk/" title="United Kingdom Roller Derby Association" rel="home">United Kingdom Roller Derby Association</a>
+        </footer>
+      </div>
+      <p>&nbsp;</p>
     </div>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-66916661-4', 'auto');
+      ga('send', 'pageview');
+    </script>
   </body>
 </html>
