@@ -1,10 +1,10 @@
       body {
         background:
           linear-gradient(
-            rgba(0, 0, 0, 0.8),
-            rgba(0, 0, 0, 0.8)
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
           ),
-          url(logo.jpg) no-repeat center center fixed;
+          url(background.jpg) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -84,9 +84,13 @@
             padding: 0.1em;
           }
           footer {
-            color: #888;
-            font-size: 0.8em;
+            color: #777;
+            font-size: 0.7em;
             text-align: right;
           }
+            footer span,
             footer a,
-            footer a:visited { color: #888; }
+            footer a:visited {
+              color: #777;
+              text-decoration: none;
+            }

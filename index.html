@@ -10,21 +10,21 @@
     <meta property="og:title" content="Status"/>
     <meta property="og:url" content="http://status.ukrda.org.uk/"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:image" content="http://status.ukrda.org.uk/logo.jpg"/>
-    <meta itemprop="name" content="Status"/>
+    <meta property="og:image" content="http://status.ukrda.org.uk/logo.png"/>
+    <meta itemprop="name" content="UKRDA Status"/>
     <meta itemprop="url" content="http://status.ukrda.org.uk/"/>
-    <meta itemprop="thumbnailUrl" content="http://status.ukrda.org.uk/logo.jpg"/>
-    <link rel="image_src" href="http://status.ukrda.org.uk/logo.jpg" />
-    <meta itemprop="image" content="http://status.ukrda.org.uk/logo.jpg"/>
-    <meta name="twitter:title" content="Status"/>
-    <meta name="twitter:image" content="http://status.ukrda.org.uk/logo.jpg"/>
+    <meta itemprop="thumbnailUrl" content="http://status.ukrda.org.uk/logo.png"/>
+    <link rel="image_src" href="http://status.ukrda.org.uk/logo.png" />
+    <meta itemprop="image" content="http://status.ukrda.org.uk/logo.png"/>
+    <meta name="twitter:title" content="UKRDA Status"/>
+    <meta name="twitter:image" content="http://status.ukrda.org.uk/logo.png"/>
     <meta name="twitter:url" content="http://status.ukrda.org.uk/"/>
     <meta name="twitter:card" content="summary"/>
     <meta name="description" content="Status of services run by the United Kingdom Roller Derby Association">
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet" type="text/css">
     <link href="style.css" rel="stylesheet" type="text/css">
   </head>
-  <body class="up">
+  <body>
     <div class="wrapper">
       <div class="content">
         <div class="logo"><img src="logo.png" alt="United Kingdom Roller Derby Association" /></div>
@@ -46,11 +46,13 @@
           If you are experiencing any difficulties accessing the tools listed above and you do not see any information posted, please get in touch with <a href="mailto:tech@ukrda.org.uk">tech@ukrda.org.uk</a> so we can investigate.
         </p>
         <footer>
-          <a href="http://ukrda.org.uk/" title="United Kingdom Roller Derby Association" rel="home">United Kingdom Roller Derby Association</a>
+          <span>Image courtesy of <a href="boutday.com">boutday.com</a></span><br />
+          <span>&copy; <a href="http://ukrda.org.uk/" title="United Kingdom Roller Derby Association" rel="home">United Kingdom Roller Derby Association</a></span>
         </footer>
       </div>
       <p>&nbsp;</p>
     </div>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -59,6 +61,10 @@
 
       ga('create', 'UA-66916661-4', 'auto');
       ga('send', 'pageview');
+
+      $(function(){
+        $('body').addClass( $('.down').length ? 'down' : $('.warn').length ? 'warn' : 'up' );
+      });
     </script>
   </body>
 </html>
