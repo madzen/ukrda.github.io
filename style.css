@@ -32,9 +32,9 @@
               padding: 0 0 0 24px;
               min-height: 20px;
             }
-              li.up { background: url(tick.png) no-repeat left center; }
-              li.warn { background: url(error.png) no-repeat left center; }
-              li.down { background: url(exclamation.png) no-repeat left center; }
+              li.up { background: url(tick.png) no-repeat left 4px; }
+              li.warn { background: url(error.png) no-repeat left 4px; }
+              li.down { background: url(exclamation.png) no-repeat left 4px; }
 
           .down h1 span,
           li.down span { background-color: #d00; }
